@@ -1,71 +1,20 @@
-# easy-annotation README
+# Easy Annotation
 
-This is the README for your extension "easy-annotation". After writing up a brief description, we recommend including the following sections.
+Easy Annotation은 HTML 파일 내에서 현재 커서 위치의 컨텍스트(HTML, `` `<script>` `` 태그 내 JavaScript, `` `<style>` `` 태그 내 CSS)를 지능적으로 감지하여, `Ctrl+/` (macOS: `Cmd+/`) 단축키를 눌렀을 때 각 언어에 맞는 올바른 스타일의 주석을 자동으로 토글해주는 VS Code 확장입니다.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- HTML 파일 내의 HTML, JavaScript, CSS 컨텍스트 자동 감지
+- JavaScript 영역에서는 `` `//` `` 스타일 주석 토글
+- CSS 영역에서는 `` `/* ... */` `` 스타일 주석 토글 (각 라인 적용)
+- 그 외 HTML 영역에서는 ` ` `` 스타일 주석 토글 (VS Code 기본 동작 활용)
+- 표준 `Ctrl+/` (macOS: `Cmd+/`) 주석 토글 단축키 사용
+- TextMate 문법을 활용한 정확한 언어 범위 분석
 
-For example if there is an image subfolder under your extension project workspace:
+![Easy Annotation 데모 이미지](images/easy-annotation-img.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+## 사용 방법
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. HTML 파일을 엽니다.
+2. 주석을 추가하거나 제거하고 싶은 코드 라인에 커서를 두거나 영역을 선택합니다.
+3. `Ctrl+/` (macOS: `Cmd+/`) 단축키를 누릅니다.

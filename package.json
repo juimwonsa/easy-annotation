@@ -1,13 +1,30 @@
 {
   "name": "easy-annotation",
-  "displayName": "easy-annotation",
+  "displayName": "Easy Annotation",
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"
   },
+  "publisher": "hoon",
   "categories": [
     "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juimwonsa/easy-annotation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juimwonsa/easy-annotation/issues"
+  },
+  "homepage": "https://github.com/juimwonsa/easy-annotation#readme",
+  "keywords": [
+    "html",
+    "javascript",
+    "css",
+    "comment",
+    "toggle comment",
+    "textmate"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
